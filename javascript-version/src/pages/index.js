@@ -21,6 +21,7 @@ import StatisticsCard from 'src/views/dashboard/StatisticsCard'
 import WeeklyOverview from 'src/views/dashboard/WeeklyOverview'
 import DepositWithdraw from 'src/views/dashboard/DepositWithdraw'
 import SalesByCountries from 'src/views/dashboard/SalesByCountries'
+import EditorComp from './editor'
 
 const Dashboard = () => {
   return (
@@ -92,6 +93,9 @@ const Dashboard = () => {
         </Grid>
         <Grid item xs={12}>
           <Table />
+        </Grid>
+        <Grid item xs={12}>
+          <EditorComp />
         </Grid>
       </Grid>
     </ApexChartWrapper>
